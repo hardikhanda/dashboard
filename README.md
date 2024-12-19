@@ -38,9 +38,8 @@ Project Structure
 
 The project is organized as follows:
 
-bash
+```bash
 
-Copy code
 
 `/src
   /components
