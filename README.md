@@ -38,7 +38,7 @@ Project Structure
 
 The project is organized as follows:
 
-```bash
+bash
 
 
 `/src
