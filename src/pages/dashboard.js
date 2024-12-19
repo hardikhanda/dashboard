@@ -4,12 +4,15 @@ import Sidebar from '../components/sidebar';
 import ProgressBar from '../components/progressbar';
 import FileClaimSection from '../components/fileClaimSection';
 import ClaimDocumentsSection from '../components/claimDocumentSection';
+import BottomNavbar from '../components/bottomNavbar';
 
 function Dashboard() {
   return (
     <div className="flex min-h-screen bg-white">
-      {/* Sidebar */}
-      <Sidebar />
+      {/* Sidebar - Hidden on small and medium screens */}
+      <div className="hidden md:block">
+        <Sidebar />
+      </div>
 
       {/* Main Content Section */}
       <div className="flex-1 p-6 bg-light-gray rounded-lg ml-4">
@@ -51,11 +54,17 @@ function Dashboard() {
           <ProgressBar />
 
           {/* New Div with Curved Corners */}
-          
+          <div className="space-y-6">
             {/* FileClaimSection Component */}
             <FileClaimSection />
-            <ClaimDocumentsSection/>
+            <ClaimDocumentsSection />
+          </div>
         </div>
+      </div>
+
+      {/* Bottom Navbar - Hidden on medium and larger screens */}
+      <div className="block md:hidden">
+        <BottomNavbar />
       </div>
     </div>
   );
