@@ -38,20 +38,21 @@ Project Structure
 
 The project is organized as follows:
 
-bash
+ ```bash
 
 
-`/src
-  /components
-    /Sidebar.js          # Sidebar navigation component
-    /BottomBar.js         # Bottom bar component
-    /MainContent.js       # Main content area component
-    /ClaimFile.js         # Claim file upload section
-    /ClaimDocument.js     # Claim document display section
-  /styles
-    /tailwind.css         # Tailwind CSS setup
-  /App.js                 # Main app component
-  /index.js               # Entry point for the app`
+ `/src
+   /components
+     /Sidebar.js          # Sidebar navigation component
+     /BottomBar.js         # Bottom bar component
+     /MainContent.js       # Main content area component
+     /ClaimFile.js         # Claim file upload section
+     /ClaimDocument.js     # Claim document display section
+   /styles
+     /tailwind.css         # Tailwind CSS setup
+   /App.js                 # Main app component
+   /index.js               # Entry point for the app`
+```
 
 ### Major Components:
 1. **Sidebar**: Contains links to various sections: **Claim File**, **Claim Document**, and any future components you add.
