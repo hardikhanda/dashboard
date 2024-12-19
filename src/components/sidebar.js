@@ -48,7 +48,7 @@ const Sidebar = () => {
     {
       name: "Open a Dispute",
       icon: () => (
-        <img src="fist (1).png" alt="Open a Dispute" className="h-6 w-6" />
+        <img src="fistq(1).png" alt="Open a Dispute" className="h-6 w-6 bg-blue" />
       )
     },
   ];
